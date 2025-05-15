@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body background="/static/back4.jpg">
+<form >
+<br><br>
+<h1 style="margin-left:50px;">View Query</h1>
+    <table border=5" style="margin-left:50px;">
+    <thead>
+
+    <tr>
+        <th>Fullname</th>
+        <th>Email</th>
+        <th>Contact</th>
+ <th>Message</th>
+ <th></th>
+
+    </tr>
+    </thead>
+    <tbody>
+{% for row in data %}
+            <tr>
+                <td>{{row[0]}}</td>
+                <td>{{row[1]}}</td>
+                <td>{{row[2]}}</td>
+
+           <td>{{row[9]}}</td>
+
+
+            </tr>
+{% endfor %}
+    </tbody></tr>
+</table>
+
+</table>
+        <br> <br> <br><table style="margin-left:850px;">
+        <tr><td><button class="GFG" ><a href='/menu'>Cancel</a></button></td></tr>
+    </table>
+
+</form>
+
+</body>
+</html>

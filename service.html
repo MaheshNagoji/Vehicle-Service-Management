@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <style>
+input[type=text] {
+    padding:10px;
+    border:2px solid #ccc;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+input[type=text]:focus {
+    border-color:#333;
+}
+
+input[type=submit] {
+    padding:10px 15px;
+    background:lightseagreen;
+
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+        input[type=button] {
+    padding:10px 15px;
+    background:lightseagreen;
+
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+
+.GFG {
+            padding:10px 15px;
+    background:lightseagreen;
+
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+        }
+
+</style>
+    <title></title>
+</head>
+<body background="/static/back4.jpg">
+<br><br><br><br><br>
+<form action = "/dsave" method="post" style="margin-left:150px;">
+    <h2 align="left">Service center Information</h2>
+
+
+    <table >
+        <tr><td>Service Center Name</td><td><input type="text" name="dname"></td></tr>
+
+        <tr><td>EmailID</td><td><input type="text" name="emailid"></td></tr>
+        <tr><td>Contact</td><td><input type="text" name="contact"></td></tr>
+         <tr><td>Specilist</td><td><input type="text" name="spec"></td></tr>
+        <tr><td>Location</td><td><input type="text" name="dtime"></td></tr>
+
+    </table>
+        <br> <br> <br><table>
+        <tr><td><input type="submit" value="Submit"></td><td><button class="GFG" ><a href='/menu'>Cancel</a></button></td></tr>
+    </table>
+    </form>
+</body>
+</html>
